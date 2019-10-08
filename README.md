@@ -22,7 +22,7 @@ And Netscape said, "Let the remains of the Navigator be gathered to one grave, a
 
 Netscape called the open source "Mozilla" and the gathered remains he called "Firefox." And Berners-Lee saw that it was good.
 
-Then Berners-Lee said, "Let the interwebs produce languages: seed-bearing HTML and CSS and JavaScript on the library that bear libraries and frameworks with seed in it, according to their various kinds." And it was so.
+Then Berners-Lee said, "Let the interwebs produce languages: seed-bearing HTML and CSS and JavaScript on the interwebs that bear libraries and frameworks with seed in it, according to their various kinds." And it was so.
 
 The interwebs produced languages: HTML and CSS bearing libraries according to their kinds and JavaScript bearing libraries in it according to their kinds. And Berners-Lee saw that it was good.
 
@@ -48,9 +48,9 @@ Beners-Lee blessed them and said, "Be fruitful and increase in number and fill t
 
 And there was evening, and there was morning--the fifth day.
 
-And Berners-Lee said, "Let the JavaScript produce a standard libraries according to their kinds: Arrays, Objects, Functions and so on, each according to their kind." And it was so.
+And Berners-Lee said, "Let the JavaScript evolve standard libraries according to their kinds: Arrays, Objects, Functions and so on, each according to their kind." And it was so.
 
-Berners-Lee made the Array methods according to their kinds, the Object methods according to their kinds, and all the methods that move along the Function prototype according to their kinds. And Beners-Lee saw that it was good.
+Berners-Lee made the Array methods according to their kinds, the Object methods according to their kinds, and all the methods that move along the Function prototype according to their kinds. And so on. And Beners-Lee saw that it was good.
 
 Then Berners-Lee said, "Let us make Naito in our image, in our likeness, and let them rule over the libraries and the frameworks of the Javascript, over all the interwebs, and over all the standard libraries that move along the prototypes."
 
@@ -88,13 +88,13 @@ For Berners-Lee knows that when you eat from it your eyes will be opened, and yo
 
 When the Naito saw that the fruit of the `Array.prototype.reduce` was good for food and pleasing to the eye, and also desirable for gaining wisdom, she took some and ate it. She also gave some to her husband, Naito, who was with her, and he ate it.
 
-Then the eyes of both of them were opened, and they realized the standard library was naked; so they sewed a new library together and made `reduce` versions of the libraries for themselves.
+Then the eyes of both of them were opened, and they realized the standard library was naked; so they sewed a new library together and made `reduce` versions of the various functions therein for themselves.
 
 Then the man and his wife heard the sound of the Lord Berners-Lee as he was walking in the garden in the cool of the day, and they hid from the Lord Berners-Lee among the standard libraries of the JavaScript.
 
 But the Lord Berners-Lee called to the man, “Where are you?”
 
-He answered, "I heard you in the standard library, and I was afraid because the standard library is naked; so I hid."
+He answered, "I heard you in the standard libraries, and I was afraid because the standard library is naked; so I hid."
 
 And he said, "Who told you that the standard library was naked? Have you eaten from the `reduce` that I commanded you not to eat from?”
 
