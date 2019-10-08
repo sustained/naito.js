@@ -1,0 +1,2 @@
+# naito.js
+Blame Naito.
