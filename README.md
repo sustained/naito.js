@@ -1,5 +1,7 @@
 ## Naito.js
 
+![Reduce all the things.](/assets/docs/all-the-things.png)
+
 ## Genesis 1
 
 In the beginning Tim Berners-Lee created the inter and the webs.
