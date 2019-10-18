@@ -44,6 +44,31 @@ export function arraySlice(arr, start, stop = Infinity) {
   }, [])
 }
 
+export function flat(arr,depth = 1) {
+  return arr.reduce((output, item) => {
+    if(Array.isArray(item) && depth >= 1) {
+      output.push(...flat(item, depth - 1))
+    }
+    else {
+      output.push(item)
+    }
+    return output
+  }, [])
+}
+
+export function flatMap(arr, mapFn) {
+  return arr.reduce((output,result) => {
+    const result = mapFn(item)
+    if(Array.isArray(result)) {
+      output.push(...result)
+    }
+    else {
+      output.push(result)
+    }
+    return output
+  }, [])
+}
+
 export function arrayZip(arrGroup) {
   const maxLength = arr.reduce((max, arr) => Math.max(max, arr.length), 0)
 
@@ -62,6 +87,7 @@ export function arrayZip(arrGroup) {
       return carry
     })
 }
+
 
 // Bonus
 // export const arrayIntersection = (arrGroup) => arrGroup.reduce((item, index) => index ? item : arrayFilter(item, item => arrayEvery(arraySlice(arrGroupitem, 1), (internalArray) => arrayIncludes(internalArray, item)), null))
