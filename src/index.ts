@@ -50,6 +50,30 @@ export function arraySlice<T>(array: T[], start = 0, stop = Infinity) {
   }, [])
 }
 
+export function arrayFlat<T, K extends T[]>(array: (T | K)[], depth = 1): (T | K)[] {
+  return array.reduce((output, item) => {
+    if (Array.isArray(item) && depth >= 1) {
+      output.push(...arrayFlat(item, depth - 1))
+    } else {
+      output.push(item)
+    }
+    return output
+  }, [])
+}
+
+export function arrayFlatMap<T, U>(array: T[], mapFn: (element: T, index: number, array: T[]) => U, thisArg: any = array): U[] {
+  mapFn = mapFn.bind(thisArg)
+  return array.reduce((output, item, index, array) => {
+    const result = mapFn(item, index, array)
+    if (Array.isArray(result)) {
+      output.push(...result)
+    } else {
+      output.push(result)
+    }
+    return output
+  }, [])
+}
+
 export function arrayZip<T>(arrGroup: T[][]) {
   const maxLength = arrGroup.reduce((max, arr) => Math.max(max, arr.length), 0)
 
