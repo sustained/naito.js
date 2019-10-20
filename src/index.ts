@@ -17,7 +17,7 @@ export function arrayMap<T, U>(arr: T[], fn: (element: T, index: number, array: 
   return arr.reduce((carry, item, index, array) => {
     carry.push(fn(item, index, array))
     return carry;
-  }, [])
+  }, [] as U[])
 }
 
 export function arrayForEach<T>(arr: T[], fn: (element: T, index: number, array: T[]) => void, thisArg: any = arr) {
@@ -47,10 +47,10 @@ export function arraySlice<T>(array: T[], start = 0, stop = Infinity) {
       carry.push(item)
     }
     return carry
-  }, [])
+  }, [] as T[])
 }
 
-export function arrayFlat<T, K extends T[]>(array: (T | K)[], depth = 1): (T | K)[] {
+export function arrayFlat<T>(array: (T | T[])[], depth = 1): (T | T[])[] {
   return array.reduce((output, item) => {
     if (Array.isArray(item) && depth >= 1) {
       output.push(...arrayFlat(item, depth - 1))
@@ -58,10 +58,10 @@ export function arrayFlat<T, K extends T[]>(array: (T | K)[], depth = 1): (T | K
       output.push(item)
     }
     return output
-  }, [])
+  }, [] as (T | T[])[])
 }
 
-export function arrayFlatMap<T, U>(array: T[], mapFn: (element: T, index: number, array: T[]) => U, thisArg: any = array): U[] {
+export function arrayFlatMap<T, U>(array: T[], mapFn: (element: T, index: number, array: T[]) => U | U[], thisArg: any = array): U[] {
   mapFn = mapFn.bind(thisArg)
   return array.reduce((output, item, index, array) => {
     const result = mapFn(item, index, array)
@@ -71,7 +71,7 @@ export function arrayFlatMap<T, U>(array: T[], mapFn: (element: T, index: number
       output.push(result)
     }
     return output
-  }, [])
+  }, [] as U[])
 }
 
 export function arrayZip<T>(arrGroup: T[][]) {
@@ -87,10 +87,10 @@ export function arrayZip<T>(arrGroup: T[][]) {
           .reduce((acc, arr) => {
             acc.push(arr[index])
             return acc
-          })
+          }, [] as any[])
       )
       return carry
-    }, [])
+    }, [] as any[])
 }
 
 // Bonus
@@ -99,7 +99,7 @@ export function arrayUnion<T>(arrGroup: T[][]) {
   return [
     ...arrGroup.reduce(
       (carry, arr) => arrayForEach(arr, (item) => carry.add(item)) as undefined || carry,
-      new Set()
+      new Set<any>()
     )
   ]
 }
